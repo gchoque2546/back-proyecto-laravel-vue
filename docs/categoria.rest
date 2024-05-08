@@ -1,0 +1,28 @@
+### Ver Categoria
+GET http://127.0.0.1:8000/api/categoria
+
+### Guardar Categoria
+POST http://127.0.0.1:8000/api/categoria
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "ELECTRONICOS",
+    "detalle": "Electronicos para PC"
+}
+
+### Mostrar Categoria
+GET http://127.0.0.1:8000/api/categoria/7
+
+### Modificar
+PUT http://127.0.0.1:8000/api/categoria/7
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "CALZADOS MODIFICADO",
+    "detalle": "Calzados de Varon"
+}
+
+### Eliminar
+DELETE http://127.0.0.1:8000/api/categoria/14
