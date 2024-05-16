@@ -1,0 +1,15 @@
+### Listar Producto
+GET http://127.0.0.1:8000/api/producto
+
+### Guardar Producto
+POST http://127.0.0.1:8000/api/producto
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "PARLANTES",
+    "precio": 40.98,
+    "stock": 24,
+    "categoria_id": 3,
+    "descripcion": "Parlante Gamer"
+}
