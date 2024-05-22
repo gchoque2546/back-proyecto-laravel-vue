@@ -7,9 +7,30 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "nombre": "PARLANTES",
+    "nombre": "PARLANTES de prueba",
     "precio": 40.98,
     "stock": 24,
     "categoria_id": 3,
     "descripcion": "Parlante Gamer"
 }
+
+### Mostrar Producto
+GET http://127.0.0.1:8000/api/producto/7
+Accept: application/json
+
+### Modificar Producto
+PUT  http://127.0.0.1:8000/api/producto/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "ZAPATO MODIFICADO",
+  "precio": 250.98,
+  "stock": 40,
+  "descripcion": "Zapatos de Prueba",
+  "estado": true,
+  "categoria_id": 1
+}
+
+### Eliminar Producto
+DELETE http://127.0.0.1:8000/api/producto/7
