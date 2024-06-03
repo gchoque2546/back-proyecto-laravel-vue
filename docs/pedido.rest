@@ -1,0 +1,17 @@
+### Listar Pedido
+GET Http://127.0.0.1:8000/api/pedido
+Authorization: Bearer 40|nIaM9oQ6moVqbiwKkVX8LarNDOHE2jDtL98Rdu1rdde40016
+
+### Guardar Pedido
+POST Http://127.0.0.1:8000/api/pedido
+Accept: application/json
+Authorization: Bearer 37|B16vUNFrDcQDiaAzhWkJxmPuZi2I2Zv8tdfINCEu19a40f68
+Content-Type: application/json
+
+{
+    "cliente_id": 1,
+    "productos": [
+        {"producto_id": 2, "cantidad": 1},
+        {"producto_id": 3, "cantidad": 2}
+    ]
+}
